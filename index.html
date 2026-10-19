@@ -25,7 +25,7 @@
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16 px-4 text-center">
         <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-extxl font-bold mb-4">Ab Cyber Café Jaane ki Zaroorat Nahi!</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ab Cyber Café Jaane ki Zaroorat Nahi!</h2>
             <p class="text-lg text-blue-100 mb-8">Ghar baithe apne saare online forms (Sarkari Naukri, Admission, Scholarship, PAN, etc.) humse fill karwayein. Live screen share par dekhein aur apna kaam asani se karein.</p>
             <a href="#booking-form" class="bg-yellow-400 text-gray-900 px-8 py-3 rounded-xl font-bold text-lg shadow-lg hover:bg-yellow-300 transition">
                 Shuru Karein <i class="fa-solid fa-arrow-right ml-2"></i>
@@ -52,22 +52,63 @@
         </div>
     </section>
 
+    <!-- Pricing / Fees Table Section -->
+    <section class="max-w-5xl mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold text-center mb-2">Hamari Service Charges (Dummy Pricing)</h2>
+        <p class="text-center text-gray-500 mb-8 text-sm">Form ki official fees alag hogi, yeh hamari service/filling fees hai.</p>
+        
+        <div class="bg-white rounded-2xl shadow-sm border overflow-hidden">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-blue-600 text-white">
+                        <th class="p-4 font-semibold">Service Type</th>
+                        <th class="p-4 font-semibold">Estimated Time</th>
+                        <th class="p-4 font-semibold">Service Charge</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 text-sm">
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 font-medium">Sarkari Exam Form (SSC, UPSC, etc.)</td>
+                        <td class="p-4 text-gray-600">15-20 Mins</td>
+                        <td class="p-4 font-bold text-blue-600">₹50 - ₹100</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 font-medium">College / University Exam / Admission Form</td>
+                        <td class="p-4 text-gray-600">20-30 Mins</td>
+                        <td class="p-4 font-bold text-blue-600">₹80 - ₹150</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 font-medium">Scholarship Form</td>
+                        <td class="p-4 text-gray-600">30 Mins</td>
+                        <td class="p-4 font-bold text-blue-600">₹100</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 font-medium">PAN Card / Aadhaar Correction / DL</td>
+                        <td class="p-4 text-gray-600">15 Mins</td>
+                        <td class="p-4 font-bold text-blue-600">₹60 - ₹120</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
     <!-- Form Filling & Connect Section -->
     <main id="booking-form" class="max-w-4xl mx-auto px-4 py-10 bg-white rounded-2xl shadow-md border border-gray-100 my-10">
         <h2 class="text-2xl font-bold text-center mb-2">Apni Details Bharein</h2>
-        <p class="text-center text-gray-500 mb-8 text-sm">Form submit karne ke baad hum aapse turant connect karenge.</p>
+        <p class="text-center text-gray-500 mb-8 text-sm">Form submit karte hi aap seedha hamare WhatsApp par connect ho jayenge.</p>
 
-        <form action="#" method="POST" class="space-y-6">
+        <!-- Form with JavaScript WhatsApp Redirect -->
+        <form id="whatsappForm" class="space-y-6">
             <div class="grid md:grid-cols-2 gap-6">
                 <!-- Name -->
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Aapka Naam *</label>
-                    <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Enter your full name">
+                    <input type="text" id="name" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Enter your full name">
                 </div>
                 <!-- Mobile Number -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">WhatsApp Mobile Number *</label>
-                    <input type="tel" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="10-digit mobile number">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Aapka Mobile Number *</label>
+                    <input type="tel" id="mobile" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="10-digit mobile number">
                 </div>
             </div>
 
@@ -75,7 +116,7 @@
                 <!-- Service Type -->
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Kis Tarah ka Form Hai? *</label>
-                    <select required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                    <select id="service" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white">
                         <option value="">-- Select Service --</option>
                         <option value="Sarkari Exam Form">Sarkari Exam Form (SSC, UPSC, Banking etc.)</option>
                         <option value="College/University Admission">College / University Admission & Exam Form</option>
@@ -84,38 +125,50 @@
                         <option value="Other">Other Online Work</option>
                     </select>
                 </div>
-                <!-- Document Upload Option -->
+                <!-- Note -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Documents (PDF / Image Link ya WhatsApp)</label>
-                    <input type="text" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Google Drive Link ya WhatsApp par bhejenge">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Documents Status</label>
+                    <input type="text" value="WhatsApp par bhej raha hu" disabled class="w-full px-4 py-2 border rounded-lg bg-gray-100 text-gray-500 cursor-not-allowed">
                 </div>
             </div>
 
             <!-- Description / Extra details -->
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">Kuch Khaas Instructions (Agar koi ho)</label>
-                <textarea rows="3" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Jaise: Last date kab hai, kis website par bharna hai, etc."></textarea>
+                <textarea id="message" rows="3" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Jaise: Last date kab hai, kis website par bharna hai, etc."></textarea>
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-xl shadow hover:bg-blue-700 transition">
-                Request Submit Karein
+            <button type="button" onclick="sendToWhatsApp()" class="w-full bg-green-600 text-white font-bold py-3 rounded-xl shadow hover:bg-green-700 transition flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp par Details Bhejein & Connect Karein
             </button>
         </form>
 
-        <!-- Live Connect Option Section -->
+        <!-- UPI QR Code Section -->
+        <div class="mt-12 border-t pt-8 text-center">
+            <h3 class="text-lg font-bold mb-2">Advance Payment (UPI QR Code)</h3>
+            <p class="text-gray-600 text-sm mb-4">Service charge scan karke pay karein aur screenshot WhatsApp par share karein.</p>
+            <div class="inline-block p-4 bg-gray-50 border rounded-2xl shadow-sm">
+                <!-- Yahan apna QR Code image link ya file daal sakte ho -->
+                <div class="w-48 h-48 bg-gray-200 flex items-center justify-center text-gray-500 rounded-xl mb-2 border border-dashed border-gray-400">
+                    <span class="text-xs text-center p-2"><i class="fa-solid fa-qrcode text-3xl mb-1 block"></i> [ Yahan Apna UPI QR Code Lagayein ]</span>
+                </div>
+                <p class="text-xs font-semibold text-gray-700">UPI ID: 6396166274@paytm</p>
+            </div>
+        </div>
+
+        <!-- Direct Live Connect Options -->
         <div class="mt-12 border-t pt-8 text-center">
             <h3 class="text-lg font-bold mb-4">Direct Live Connect Options (Screen Sharing ke liye)</h3>
-            <p class="text-gray-600 text-sm mb-6">Form submit karne ke baad aap humse direct in platforms par connect kar sakte hain:</p>
             
             <div class="flex flex-wrap justify-center gap-4">
                 <!-- WhatsApp -->
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello,%20mujhe%20online%20form%20bharwana%20hai." target="_blank" class="flex items-center gap-2 bg-green-500 text-white px-5 py-2.5 rounded-xl font-semibold shadow hover:bg-green-600 transition">
-                    <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Chat / Call
+                <a href="https://wa.me/916396166274?text=Hello,%20mujhe%20online%20form%20bharwana%20hai." target="_blank" class="flex items-center gap-2 bg-green-500 text-white px-5 py-2.5 rounded-xl font-semibold shadow hover:bg-green-600 transition">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Direct Chat
                 </a>
                 <!-- Google Meet -->
                 <a href="https://meet.google.com/" target="_blank" class="flex items-center gap-2 bg-blue-500 text-white px-5 py-2.5 rounded-xl font-semibold shadow hover:bg-blue-600 transition">
-                    <i class="fa-solid fa-video text-xl"></i> Google Meet Join Karein
+                    <i class="fa-solid fa-video text-xl"></i> Google Meet Link
                 </a>
                 <!-- Zoom -->
                 <a href="https://zoom.us/" target="_blank" class="flex items-center gap-2 bg-sky-600 text-white px-5 py-2.5 rounded-xl font-semibold shadow hover:bg-sky-700 transition">
@@ -129,6 +182,29 @@
     <footer class="bg-gray-800 text-gray-400 py-6 text-center text-sm">
         <p>&copy; 2026 Digital Cyber Café. All Rights Reserved.</p>
     </footer>
+
+    <!-- JavaScript to handle WhatsApp Form Submission -->
+    <script>
+        function sendToWhatsApp() {
+            const name = document.getElementById('name').value;
+            const mobile = document.getElementById('mobile').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+
+            if(!name || !mobile || !service) {
+                alert('Kripya Naam, Mobile Number aur Service zaroor bharein!');
+                return;
+            }
+
+            // Tera WhatsApp number set kar diya hai
+            const myWhatsAppNumber = "916396166274"; 
+
+            const text = `Hello Sir, mujhe form bharwana hai!%0A%0A*Naam:* ${name}%0A*Mobile:* ${mobile}%0A*Service:* ${service}%0A*Instructions:* ${message}%0A%0AMaine apne documents ishi chat par bhej diye hain.`;
+
+            const url = `https://wa.me/${myWhatsAppNumber}?text=${text}`;
+            window.open(url, '_blank');
+        }
+    </script>
 
 </body>
 </html>
