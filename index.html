@@ -1,90 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Cyber Café - Ghar Baithe Form Bhawayein</title>
-    <!-- Tailwind CSS for modern styling -->
+    <title>Digital Cyber Café | India's #1 Online Form Portal</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-blue-500 selection:text-white">
 
-    <!-- Header / Navbar -->
-    <header class="bg-blue-600 text-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold flex items-center gap-2">
-                <i class="fa-solid fa-laptop-code"></i> Digital Cyber Café
-            </h1>
-            <a href="#booking-form" class="bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold text-sm shadow hover:bg-blue-50 transition">
-                Form Bharwaayein
+    <!-- Navbar / Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-blue-500/30">
+                    <i class="fa-solid fa-bolt text-white text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-blue-400 bg-clip-text text-transparent">Digital Cyber Café</span>
+                    <span class="block text-[10px] text-blue-400 font-semibold tracking-widest uppercase">Ghar Baithe Smart Solutions</span>
+                </div>
+            </div>
+            <a href="#booking-form" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-blue-600/25 transition-all duration-300 transform hover:-translate-y-0.5">
+                Form Bharwayein
             </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16 px-4 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ab Cyber Café Jaane ki Zaroorat Nahi!</h2>
-            <p class="text-lg text-blue-100 mb-8">Ghar baithe apne saare online forms (Sarkari Naukri, Admission, Scholarship, PAN, etc.) humse fill karwayein. Live screen share par dekhein aur apna kaam asani se karein.</p>
-            <a href="#booking-form" class="bg-yellow-400 text-gray-900 px-8 py-3 rounded-xl font-bold text-lg shadow-lg hover:bg-yellow-300 transition">
-                Shuru Karein <i class="fa-solid fa-arrow-right ml-2"></i>
-            </a>
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <!-- Glow background effects -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] md:w-[600px] h-[350px] md:h-[600px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[250px] h-[250px] bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-wider mb-6 animate-pulse">
+                <i class="fa-solid fa-shield-check"></i> 100% Trusted & Verified Digital Portal
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Ab Cyber Café Ke Chakkar <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Band!</span>
+            </h1>
+            <p class="text-slate-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-10 font-normal">
+                Sarkari naukri, college admission, scholarship ya koi bhi online form—ab sab kuch ghar baithe live screen share par banwayein.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#booking-form" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-blue-600/30 transition-all duration-300 flex items-center justify-center gap-2 group">
+                    <span>Abhi Form Submit Karein</span>
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="https://wa.me/916396166274?text=Hello,%20mujhe%20online%20form%20bharwana%20hai." target="_blank" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-bold px-8 py-4 rounded-2xl transition-all duration-300 flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i>
+                    <span>Direct WhatsApp Chat</span>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Features / Trust Builders -->
-    <section class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
-            <div class="text-blue-600 text-3xl mb-3"><i class="fa-solid fa-shield-halved"></i></div>
-            <h3 class="font-bold text-lg mb-2">100% Safe & Secure</h3>
-            <p class="text-gray-600 text-sm">Aapke documents aur details bilkul safe rahte hain. OTP ke waqt aap active rehte hain.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
-            <div class="text-blue-600 text-3xl mb-3"><i class="fa-solid fa-video"></i></div>
-            <h3 class="font-bold text-lg mb-2">Live Screen Share</h3>
-            <p class="text-gray-600 text-sm">Form bharte waqt live dekhein ki kya details fill ho rahi hain taaki koi galti na ho.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
-            <div class="text-blue-600 text-3xl mb-3"><i class="fa-solid fa-clock"></i></div>
-            <h3 class="font-bold text-lg mb-2">Time Saving</h3>
-            <p class="text-gray-600 text-sm">Line mein lagne ya dhoop mein jaane ki koi jhanjhat nahi, sab kuch phone ya laptop se.</p>
+    <!-- Features / Trust Highlights -->
+    <section class="max-w-7xl mx-auto px-4 pb-20">
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-slate-900/50 backdrop-blur border border-slate-800/80 p-8 rounded-3xl hover:border-slate-700 transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Live Screen Share</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Form bharte waqt live dekhein ki kya details fill ho rahi hain, taaki galti ka zero chance ho.</p>
+            </div>
+            <div class="bg-slate-900/50 backdrop-blur border border-slate-800/80 p-8 rounded-3xl hover:border-slate-700 transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">100% Safe & Secure</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">OTP hamesha aapke phone par aayega. Aapke documents bilkul encrypted aur safe rehte hain.</p>
+            </div>
+            <div class="bg-slate-900/50 backdrop-blur border border-slate-800/80 p-8 rounded-3xl hover:border-slate-700 transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Super Fast Service</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Bina line mein lage, bina dhoop mein ghume, ghar baithe instant kaam khatam.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Trust & Privacy Guarantee Section (New Added) -->
-    <section class="max-w-5xl mx-auto px-4 py-6">
-        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 p-6 md:p-8 rounded-2xl shadow-sm">
-            <h3 class="text-xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-                <i class="fa-solid fa-lock text-blue-600"></i> Aapke Documents Kitne Safe Hain? (Hamari Guarantee)
+    <!-- Trust & Privacy Guarantee Section -->
+    <section class="max-w-5xl mx-auto px-4 pb-20">
+        <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-blue-950/40 border border-blue-500/20 p-8 md:p-10 rounded-3xl shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <h3 class="text-2xl font-extrabold text-white mb-6 flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 text-sm">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                Aapke Documents Kitne Safe Hain? (Hamari Guarantee)
             </h3>
-            <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
-                <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
-                    <i class="fa-solid fa-check-circle text-green-600 text-lg mt-0.5"></i>
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300">
+                <div class="flex items-start gap-4 bg-slate-950/60 p-5 rounded-2xl border border-slate-800">
+                    <i class="fa-solid fa-circle-check text-emerald-400 text-lg mt-0.5"></i>
                     <div>
-                        <strong class="block text-gray-900 mb-1">Live Transparency</strong>
-                        <span>Form aapke samne live video call (WhatsApp/Zoom/Meet) par screen share karke bhara jayega.</span>
+                        <strong class="block text-white font-bold mb-1">Live Transparency</strong>
+                        <span class="text-slate-400">Form aapke samne live video call par screen share karke bhara jayega.</span>
                     </div>
                 </div>
-                <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
-                    <i class="fa-solid fa-check-circle text-green-600 text-lg mt-0.5"></i>
+                <div class="flex items-start gap-4 bg-slate-950/60 p-5 rounded-2xl border border-slate-800">
+                    <i class="fa-solid fa-circle-check text-emerald-400 text-lg mt-0.5"></i>
                     <div>
-                        <strong class="block text-gray-900 mb-1">OTP Sirf Aapke Paas</strong>
-                        <span>Login ya final submit ka OTP sirf aapke mobile par aayega, bina aapke permission ke kuch nahi hoga.</span>
+                        <strong class="block text-white font-bold mb-1">OTP Sirf Aapke Paas</strong>
+                        <span class="text-slate-400">Login ya final submit ka OTP sirf aapke mobile par aayega.</span>
                     </div>
                 </div>
-                <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
-                    <i class="fa-solid fa-check-circle text-green-600 text-lg mt-0.5"></i>
+                <div class="flex items-start gap-4 bg-slate-950/60 p-5 rounded-2xl border border-slate-800">
+                    <i class="fa-solid fa-circle-check text-emerald-400 text-lg mt-0.5"></i>
                     <div>
-                        <strong class="block text-gray-900 mb-1">Data Deletion Policy</strong>
-                        <span>Aapke documents sirf form filling ke liye use honge, kaam hone ke baad hum chat se delete kar dete hain.</span>
+                        <strong class="block text-white font-bold mb-1">Data Deletion Policy</strong>
+                        <span class="text-slate-400">Kaam hone ke turant baad aapke documents chat se delete kar diye jate hain.</span>
                     </div>
                 </div>
-                <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
-                    <i class="fa-solid fa-check-circle text-green-600 text-lg mt-0.5"></i>
+                <div class="flex items-start gap-4 bg-slate-950/60 p-5 rounded-2xl border border-slate-800">
+                    <i class="fa-solid fa-circle-check text-emerald-400 text-lg mt-0.5"></i>
                     <div>
-                        <strong class="block text-gray-900 mb-1">Watermark Advice</strong>
-                        <span>Aap chahe toh documents par "For Digital Cyber Café Only" likh kar bhej sakte hain extra safety ke liye.</span>
+                        <strong class="block text-white font-bold mb-1">Watermark Safety</strong>
+                        <span class="text-slate-400">Aap documents par "For Digital Cyber Café Only" likh kar bhej sakte hain.</span>
                     </div>
                 </div>
             </div>
@@ -92,154 +132,152 @@
     </section>
 
     <!-- Pricing / Fees Table Section -->
-    <section class="max-w-5xl mx-auto px-4 py-8">
-        <h2 class="text-2xl font-bold text-center mb-2">Hamari Service Charges & Fees</h2>
-        <p class="text-center text-gray-500 mb-6 text-sm">Yaha sirf hamari service/filling fees di gayi hai.</p>
-        
-        <div class="bg-white rounded-2xl shadow-sm border overflow-hidden">
-            <table class="w-full text-left border-collapse">
-                <thead>
-                    <tr class="bg-blue-600 text-white">
-                        <th class="p-4 font-semibold">Service Type</th>
-                        <th class="p-4 font-semibold">Service Charge (Hamari Fees)</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200 text-sm">
-                    <tr class="hover:bg-gray-50">
-                        <td class="p-4 font-medium">Sarkari Exam Form (SSC, UPSC, etc.)</td>
-                        <td class="p-4 font-bold text-blue-600">₹50 - ₹100</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50">
-                        <td class="p-4 font-medium">College / University Exam / Admission Form</td>
-                        <td class="p-4 font-bold text-blue-600">₹80 - ₹150</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50">
-                        <td class="p-4 font-medium">Scholarship Form</td>
-                        <td class="p-4 font-bold text-blue-600">₹100</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50">
-                        <td class="p-4 font-medium">PAN Card / Aadhaar Correction / DL</td>
-                        <td class="p-4 font-bold text-blue-600">₹60 - ₹120</td>
-                    </tr>
-                </tbody>
-            </table>
+    <section class="max-w-5xl mx-auto px-4 pb-20">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-extrabold text-white mb-3">Transparent Pricing & Charges</h2>
+            <p class="text-slate-400 text-sm">Yaha sirf hamari service/filling fees di gayi hai.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-xl">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-800/60 text-slate-200 border-b border-slate-700/60 text-sm">
+                            <th class="p-5 font-bold">Service Type</th>
+                            <th class="p-5 font-bold text-right">Service Charge (Hamari Fees)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800 text-sm">
+                        <tr class="hover:bg-slate-800/40 transition">
+                            <td class="p-5 font-medium text-white">Sarkari Exam Form (SSC, UPSC, Banking, etc.)</td>
+                            <td class="p-5 font-bold text-blue-400 text-right">₹50 - ₹100</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/40 transition">
+                            <td class="p-5 font-medium text-white">College / University Exam & Admission Form</td>
+                            <td class="p-5 font-bold text-blue-400 text-right">₹80 - ₹150</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/40 transition">
+                            <td class="p-5 font-medium text-white">Scholarship Form</td>
+                            <td class="p-5 font-bold text-blue-400 text-right">₹100</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/40 transition">
+                            <td class="p-5 font-medium text-white">PAN Card / Aadhaar Correction / Driving Licence</td>
+                            <td class="p-5 font-bold text-blue-400 text-right">₹60 - ₹120</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <!-- Payment & Fee Rule Note -->
-        <div class="mt-4 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl text-sm text-amber-900 shadow-sm">
-            <p class="font-bold mb-1"><i class="fa-solid fa-circle-exclamation mr-1"></i> Zaroori Niyam & Payment Notice:</p>
-            <ul class="list-disc pl-5 space-y-1">
-                <li>Form ki official <strong>Government Fee (Exam/Application Fee)</strong> alag se deni hogi jo ki sarkari portal par lagti hai.</li>
-                <li>Form fill karne se pehle government fee aur hamari service fee ka <strong>Aadha (Half Payment)</strong> advance dena hoga.</li>
-                <li>Baaki ka bacha hua aadha service charge form successfully complete/fill hone ke baad dena hoga.</li>
+        <div class="mt-6 bg-amber-500/10 border border-amber-500/30 p-5 rounded-2xl text-sm text-amber-200">
+            <p class="font-bold mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-triangle-exclamation text-amber-400"></i> Zaroori Niyam & Payment Notice:
+            </p>
+            <ul class="list-disc pl-5 space-y-1 text-slate-300">
+                <li>Form ki official <strong>Government Fee</strong> alag se deni hogi jo official portal par lagti hai.</li>
+                <li>Form fill karne se pehle government fee aur service fee ka <strong class="text-white">Half Payment (Advance)</strong> dena hoga.</li>
+                <li>Baaki ka bacha hua aadha charge form successfully complete hone ke baad dena hoga.</li>
             </ul>
         </div>
     </section>
 
     <!-- Form Filling & Connect Section -->
-    <main id="booking-form" class="max-w-4xl mx-auto px-4 py-10 bg-white rounded-2xl shadow-md border border-gray-100 my-10">
-        <h2 class="text-2xl font-bold text-center mb-2">Apni Details Bharein</h2>
-        <p class="text-center text-gray-500 mb-2 text-sm">Form submit karte hi aap seedha hamare WhatsApp par connect ho jayenge.</p>
-        <p class="text-center text-red-600 font-semibold mb-8 text-xs">* Apne saare zaroori documents WhatsApp par hi send karein.</p>
+    <main id="booking-form" class="max-w-4xl mx-auto px-4 pb-28">
+        <div class="bg-slate-900 border border-slate-800 p-8 md:p-12 rounded-3xl shadow-2xl relative">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-extrabold text-white mb-2">Apni Details Bharein</h2>
+                <p class="text-slate-400 text-sm">Form submit karte hi aap seedha hamare WhatsApp par connect ho jayenge.</p>
+                <p class="text-red-400 font-semibold text-xs mt-2">* Apne saare zaroori documents WhatsApp par hi send karein.</p>
+            </div>
 
-        <!-- Form with JavaScript WhatsApp Redirect -->
-        <form id="whatsappForm" class="space-y-6">
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- Name -->
+            <form id="whatsappForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-2">Aapka Naam *</label>
+                        <input type="text" id="name" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-2">Aapka Mobile Number *</label>
+                        <input type="tel" id="mobile" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition" placeholder="10-digit mobile number">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-2">Kis Tarah ka Form Hai? *</label>
+                        <select id="service" required onchange="checkOtherService()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition">
+                            <option value="" class="bg-slate-900">-- Select Service --</option>
+                            <option value="Sarkari Exam Form" class="bg-slate-900">Sarkari Exam Form (SSC, UPSC, Banking etc.)</option>
+                            <option value="College/University Admission" class="bg-slate-900">College / University Admission & Exam Form</option>
+                            <option value="Scholarship Form" class="bg-slate-900">Scholarship Form</option>
+                            <option value="PAN / Aadhaar / DL Work" class="bg-slate-900">PAN Card / Aadhaar / Driving Licence</option>
+                            <option value="Other" class="bg-slate-900">Other Online Work (Dusra Kaam)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-2">Documents Kaise Bhejenge? *</label>
+                        <select id="docMode" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition">
+                            <option value="WhatsApp Par Bhej Raha Hu" class="bg-slate-900">WhatsApp Chat Par Bhej Raha Hu</option>
+                            <option value="Google Drive Link" class="bg-slate-900">Google Drive Link Share Karunga</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="otherServiceBox" class="hidden">
+                    <label class="block text-sm font-semibold text-slate-300 mb-2">Apne Form / Kaam ka Naam Yaha Likhein *</label>
+                    <input type="text" id="otherServiceText" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition" placeholder="Jaise: Electricity Bill, Certificate, etc.">
+                </div>
+
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Aapka Naam *</label>
-                    <input type="text" id="name" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Enter your full name">
+                    <label class="block text-sm font-semibold text-slate-300 mb-2">Kuch Khaas Instructions (Agar koi ho)</label>
+                    <textarea id="message" rows="3" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition" placeholder="Jaise: Last date kab hai, kis website par bharna hai, etc."></textarea>
                 </div>
-                <!-- Mobile Number -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Aapka Mobile Number *</label>
-                    <input type="tel" id="mobile" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="10-digit mobile number">
-                </div>
-            </div>
 
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- Service Type -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Kis Tarah ka Form Hai? *</label>
-                    <select id="service" required onchange="checkOtherService()" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white">
-                        <option value="">-- Select Service --</option>
-                        <option value="Sarkari Exam Form">Sarkari Exam Form (SSC, UPSC, Banking etc.)</option>
-                        <option value="College/University Admission">College / University Admission & Exam Form</option>
-                        <option value="Scholarship Form">Scholarship Form</option>
-                        <option value="PAN / Aadhaar / DL Work">PAN Card / Aadhaar / Driving Licence</option>
-                        <option value="Other">Other Online Work (Dusra Kaam)</option>
-                    </select>
-                </div>
-                <!-- Document Sending Mode -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Documents Kaise Bhejenge? *</label>
-                    <select id="docMode" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white">
-                        <option value="WhatsApp Par Bhej Raha Hu">WhatsApp Chat Par Bhej Raha Hu</option>
-                        <option value="Google Drive Link">Google Drive Link Share Karunga</option>
-                    </select>
+                <button type="button" onclick="sendToWhatsApp()" class="w-full bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-500 hover:to-green-500 text-white font-bold py-4 rounded-xl shadow-xl shadow-green-600/25 transition-all duration-300 flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>WhatsApp par Details Bhejein & Connect Karein</span>
+                </button>
+            </form>
+
+            <!-- UPI QR Code Section -->
+            <div class="mt-14 border-t border-slate-800 pt-10 text-center">
+                <h3 class="text-xl font-bold text-white mb-2">Advance Payment (UPI QR Code)</h3>
+                <p class="text-slate-400 text-sm mb-6">Advance (Half Payment) scan karke pay karein aur screenshot WhatsApp par share karein.</p>
+                <div class="inline-block p-6 bg-slate-950 border border-slate-800 rounded-3xl shadow-inner">
+                    <div class="w-48 h-48 bg-slate-900 flex flex-col items-center justify-center text-slate-400 rounded-2xl mb-3 border border-dashed border-slate-700">
+                        <i class="fa-solid fa-qrcode text-4xl mb-2 text-blue-400"></i>
+                        <span class="text-xs text-center px-2">[ Yahan Apna UPI QR Code Lagayein ]</span>
+                    </div>
+                    <p class="text-xs font-bold text-slate-300 tracking-wider">UPI ID: <span class="text-blue-400">6396166274@paytm</span></p>
                 </div>
             </div>
 
-            <!-- Other Service Input Field (Hidden by default) -->
-            <div id="otherServiceBox" class="hidden">
-                <label class="block text-sm font-medium text-gray-700 mb-1">Apne Form / Kaam ka Naam Yaha Likhein *</label>
-                <input type="text" id="otherServiceText" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Jaise: Electricity Bill, Certificate, etc.">
-            </div>
-
-            <!-- Description / Extra details -->
-            <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Kuch Khaas Instructions (Agar koi ho)</label>
-                <textarea id="message" rows="3" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Jaise: Last date kab hai, kis website par bharna hai, etc."></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <button type="button" onclick="sendToWhatsApp()" class="w-full bg-green-600 text-white font-bold py-3 rounded-xl shadow hover:bg-green-700 transition flex items-center justify-center gap-2">
-                <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp par Details Bhejein & Connect Karein
-            </button>
-        </form>
-
-        <!-- UPI QR Code Section -->
-        <div class="mt-12 border-t pt-8 text-center">
-            <h3 class="text-lg font-bold mb-2">Advance Payment (UPI QR Code)</h3>
-            <p class="text-gray-600 text-sm mb-4">Advance (Half Payment) scan karke pay karein aur screenshot WhatsApp par share karein.</p>
-            <div class="inline-block p-4 bg-gray-50 border rounded-2xl shadow-sm">
-                <!-- Yahan apna QR Code image link ya file daal sakte ho -->
-                <div class="w-48 h-48 bg-gray-200 flex items-center justify-center text-gray-500 rounded-xl mb-2 border border-dashed border-gray-400">
-                    <span class="text-xs text-center p-2"><i class="fa-solid fa-qrcode text-3xl mb-1 block"></i> [ Yahan Apna UPI QR Code Lagayein ]</span>
+            <!-- Direct Live Connect Options -->
+            <div class="mt-14 border-t border-slate-800 pt-10 text-center">
+                <h3 class="text-xl font-bold text-white mb-6">Direct Live Connect Options (Screen Sharing)</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://wa.me/916396166274?text=Hello,%20mujhe%20online%20form%20bharwana%20hai." target="_blank" class="flex items-center gap-2.5 bg-green-600 hover:bg-green-500 text-white px-6 py-3.5 rounded-xl font-bold shadow-lg shadow-green-600/20 transition">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Direct Chat
+                    </a>
+                    <a href="https://meet.google.com/" target="_blank" class="flex items-center gap-2.5 bg-blue-600 hover:bg-blue-500 text-white px-6 py-3.5 rounded-xl font-bold shadow-lg shadow-blue-600/20 transition">
+                        <i class="fa-solid fa-video text-xl"></i> Google Meet Link
+                    </a>
+                    <a href="https://zoom.us/" target="_blank" class="flex items-center gap-2.5 bg-sky-600 hover:bg-sky-500 text-white px-6 py-3.5 rounded-xl font-bold shadow-lg shadow-sky-600/20 transition">
+                        <i class="fa-solid fa-desktop text-xl"></i> Zoom Link
+                    </a>
                 </div>
-                <p class="text-xs font-semibold text-gray-700">UPI ID: 6396166274@paytm</p>
-            </div>
-        </div>
-
-        <!-- Direct Live Connect Options -->
-        <div class="mt-12 border-t pt-8 text-center">
-            <h3 class="text-lg font-bold mb-4">Direct Live Connect Options (Screen Sharing ke liye)</h3>
-            
-            <div class="flex flex-wrap justify-center gap-4">
-                <!-- WhatsApp -->
-                <a href="https://wa.me/916396166274?text=Hello,%20mujhe%20online%20form%20bharwana%20hai." target="_blank" class="flex items-center gap-2 bg-green-500 text-white px-5 py-2.5 rounded-xl font-semibold shadow hover:bg-green-600 transition">
-                    <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Direct Chat
-                </a>
-                <!-- Google Meet -->
-                <a href="https://meet.google.com/" target="_blank" class="flex items-center gap-2 bg-blue-500 text-white px-5 py-2.5 rounded-xl font-semibold shadow hover:bg-blue-600 transition">
-                    <i class="fa-solid fa-video text-xl"></i> Google Meet Link
-                </a>
-                <!-- Zoom -->
-                <a href="https://zoom.us/" target="_blank" class="flex items-center gap-2 bg-sky-600 text-white px-5 py-2.5 rounded-xl font-semibold shadow hover:bg-sky-700 transition">
-                    <i class="fa-solid fa-desktop text-xl"></i> Zoom Link
-                </a>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-400 py-6 text-center text-sm">
+    <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-slate-500 text-sm">
         <p>&copy; 2026 Digital Cyber Café. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript for Dynamic Interactions -->
+    <!-- JavaScript -->
     <script>
-        // Toggle Other Service Input Field
         function checkOtherService() {
             const serviceSelect = document.getElementById('service').value;
             const otherBox = document.getElementById('otherServiceBox');
@@ -250,7 +288,6 @@
             }
         }
 
-        // Send Form Data to WhatsApp
         function sendToWhatsApp() {
             const name = document.getElementById('name').value;
             const mobile = document.getElementById('mobile').value;
@@ -272,9 +309,7 @@
                 service = `Other: ${otherServiceText}`;
             }
 
-            // Tera WhatsApp number
             const myWhatsAppNumber = "916396166274"; 
-
             const text = `Hello Sir, mujhe form bharwana hai!%0A%0A*Naam:* ${name}%0A*Mobile:* ${mobile}%0A*Service:* ${service}%0A*Documents Mode:* ${docMode}%0A*Instructions:* ${message}%0A%0AMaine apne documents aur advance payment ka screenshot yaha bhej diya hai.`;
 
             const url = `https://wa.me/${myWhatsAppNumber}?text=${text}`;
